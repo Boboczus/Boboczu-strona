@@ -1,20 +1,119 @@
-body{
-    background-color: #92dd88;
-    a{text-align: center;}
-}
-
-h1,h2,h3,p,iframe,a{text-align: center;}
-
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
+
+body {
+  background: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 40px 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px;
+  background: rgba(30, 30, 30, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #00ff00;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #00ff00;
+}
+
+h3 {
+  font-size: 1.4em;
+  color: #00ff00;
+  margin-top: 20px;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #00ff00;
+  padding-left: 15px;
+}
+
 a {
-  color: rgb(0, 0, 0);  /* kolor tekstu */
-  cursor: pointer;       /* zmień kursor */
-  
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin: 10px 0;
+}
+
+a:hover {
+  background: #2e7d32;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #1b5e20;
+  position: relative;
+  z-index: 1;
 }
 
   
